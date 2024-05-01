@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/eventImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Event Title"
+            android:fontFamily="@font/roboto"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/eventDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="start"
+                android:text="Event Date"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/eventTown"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="start"
+                android:text="Event Town"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+
+            <TextView
+                android:id="@+id/eventPrice"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="start"
+                android:text="Event Price"
+                android:fontFamily="@font/roboto"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/eventAvailable"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="start"
+                android:text="Event Available"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/green"
+                android:textStyle="italic"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
